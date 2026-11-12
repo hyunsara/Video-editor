@@ -1,19 +1,25 @@
-# Voiceover script — Sara's glow up series, De-puff episode (v1)
+# Voiceover script — Sara's glow up series, De-puff episode (v2)
 
-Target length: ~34s. Read at a relaxed, friendly pace (about 2.5 words/sec). Timecodes are output-video times.
+Target length: ~37.5s. Relaxed, friendly pace. Opens and closes with "annyeong" (안녕 = "hi" / "bye").
 
 | # | Time | Line | On-screen text |
 |---|------|------|----------------|
-| 1 | 0:00–0:01.5 | "Puffy face? Give me five minutes." | **puffy → snatched** / in 5 minutes |
-| 2 | 0:01.5–0:04.2 | "Annyeong! Welcome back to my glow up series." | annyeong! 👋 (Korean for "hi!") |
-| 3 | 0:04.2–0:09.0 | "Today's hero: this gua sha cream. Caffeine for puffiness, retinal to firm, and the tip *is* the tool." | **v-mode gua sha cream** / caffeine 1% · retinal |
-| 4 | 0:09.0–0:13.5 | "Squeeze it straight on. No hands needed." | **01 · dot it on** |
-| 5 | 0:13.5–0:17.0 | "Forehead first. Sweep up and out to the temples." | **02 · forehead** / sweep up & out |
-| 6 | 0:17.0–0:20.5 | "Under the eyes and across the cheeks, always toward your ears." | **03 · under-eyes** / cheeks → temples |
-| 7 | 0:20.5–0:24.5 | "Chin to ear along the jawline. This is the snatch." | **04 · jawline** / chin → ear |
-| 8 | 0:24.5–0:29.5 | "Finish by draining down the neck to your collarbones. That's where the puffiness goes." | **05 · drain the neck** / down to collarbones |
-| 9 | 0:29.5–0:31.3 | "Five minutes. Instantly de-puffed." | before / after ✨ |
-| 10 | 0:31.3–0:34.0 | "Save this for tomorrow morning and follow for episode three. Annyeong!" | **follow for ep. 3 💗** |
+| 1 | 0:00–0:02.0 | "Annyeong! Puffy face? Give me five minutes." | **puffy → snatched** / in 5 minutes |
+| 2 | 0:02.0–0:04.7 | "Welcome back to my glow up series." | annyeong! 👋 (Korean for "hi!") + your title card |
+| 3 | 0:04.7–0:12.7 | "This is VT's V-Mode Gua Sha Cream. Twist it on, and the tip becomes your gua sha. Caffeine to de-puff, retinal and peptides to firm." | **vt v-mode gua sha cream** / twist to ON → built-in gua sha / chips: caffeine 1% · de-puff — retinal + 9 peptides · firm — hyaluronic acid + niacinamide · glow / small note: has retinal: SPF by day |
+| 4 | 0:12.7–0:17.7 | "First, press these points with the tip to wake up drainage." | **01 · press the points** / chin · nose · under-eyes · brows · temples |
+| 5 | 0:17.7–0:19.2 | "Squeeze some on and spread it with your fingers." | **02 · squeeze + spread** ▶▶ |
+| 6 | 0:19.2–0:22.2 | "Forehead: sweep up and out to the temples." | **03 · forehead** / sweep up & out |
+| 7 | 0:22.2–0:25.2 | "Under the eyes and across the cheeks, toward your ears." | **04 · under-eyes** / cheeks → temples |
+| 8 | 0:25.2–0:28.7 | "Chin to ear along the jawline. This is the snatch." | **05 · jawline** / chin → ear |
+| 9 | 0:28.7–0:33.2 | "Then drain down the neck to your collarbones." | **06 · drain the neck** / down to collarbones |
+| 10 | 0:33.2–0:35.0 | "Five minutes. Instantly de-puffed." | before / after ✨ |
+| 11 | 0:35.0–0:37.5 | "Save this and follow for episode three. Annyeong!" | **follow for ep. 3 💗** / annyeong! 👋 |
+
+## Product facts used (from VT Cosmetics retail listings)
+- Built-in gua sha applicator head: twist the ▼ mark to ON to dispense, OFF after use; wipe clean and dry.
+- Key ingredients: caffeine (1% on the tube), retinal, 9-peptide complex, collagen, hyaluronic acid, niacinamide, shea butter. 120 ml. Tube marked for face and full-body care.
+- Cautions: contains retinal, so wear sunscreen during the day; not recommended during pregnancy or breastfeeding.
 
 ## Korean → English
-The source video's only Korean is the on-screen greeting **"annyeong.."** (안녕), which means **"hi"**. The original video has no spoken audio.
+"annyeong" (안녕) = casual "hi" and also "bye".
