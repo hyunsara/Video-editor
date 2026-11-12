@@ -1,0 +1,18 @@
+{
+  "name": "video-editor",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "remotion": "remotion",
+    "hyperframes": "hyperframes"
+  },
+  "dependencies": {
+    "@remotion/bundler": "^4.0.543",
+    "@remotion/cli": "^4.0.543",
+    "@remotion/renderer": "^4.0.543",
+    "hyperframes": "^0.9.37",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.543"
+  }
+}

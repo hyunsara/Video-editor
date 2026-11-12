@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "historyId": "72bf788f-f80b-465a-8a54-612f37581c06",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "268ff46777938da818baa92a718571785e9acf2cef2d3ffbacbb93483dcba37a",
+      "content": "/root/.cache/hyperframes/history/72bf788f-f80b-465a-8a54-612f37581c06/blobs/26/268ff46777938da818baa92a718571785e9acf2cef2d3ffbacbb93483dcba37a"
+    },
+    "CLAUDE.md": {
+      "hash": "268ff46777938da818baa92a718571785e9acf2cef2d3ffbacbb93483dcba37a",
+      "content": "/root/.cache/hyperframes/history/72bf788f-f80b-465a-8a54-612f37581c06/blobs/26/268ff46777938da818baa92a718571785e9acf2cef2d3ffbacbb93483dcba37a"
+    },
+    "hyperframes.json": {
+      "hash": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+      "content": "/root/.cache/hyperframes/history/72bf788f-f80b-465a-8a54-612f37581c06/blobs/53/53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50"
+    },
+    "index.html": {
+      "hash": "3d000a81e5d853e11fe6c29c39f78dce5bdfa0c8e0d0d88897e1ad35c18c6310",
+      "content": "/root/.cache/hyperframes/history/72bf788f-f80b-465a-8a54-612f37581c06/blobs/3d/3d000a81e5d853e11fe6c29c39f78dce5bdfa0c8e0d0d88897e1ad35c18c6310"
+    },
+    "meta.json": {
+      "hash": "880b256402276b9fc6e6985f73b470e7e6e6ec2dc7f93672d8510852a0c1116f",
+      "content": "/root/.cache/hyperframes/history/72bf788f-f80b-465a-8a54-612f37581c06/blobs/88/880b256402276b9fc6e6985f73b470e7e6e6ec2dc7f93672d8510852a0c1116f"
+    },
+    "package.json": {
+      "hash": "776f26c243b883a08a0e66407f0353f7da22cb5e004aa74b884eae1fb985da73",
+      "content": "/root/.cache/hyperframes/history/72bf788f-f80b-465a-8a54-612f37581c06/blobs/77/776f26c243b883a08a0e66407f0353f7da22cb5e004aa74b884eae1fb985da73"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "b4781091-49b5-435d-84e1-c335a15e9114",
+      "completedAt": 1794461788584,
+      "output": "/home/user/Video-editor/test/hf.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
+}
