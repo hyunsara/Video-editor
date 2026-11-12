@@ -2,145 +2,198 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Sara's Glow Up — De-puff ep. · Brand sheet + Storyboard v1</title>
+<title>Sara's Glow Up — De-puff episode · Brand sheet + Storyboard v3</title>
 <style>
   @font-face { font-family: Jost; src: url(jost-latin-400-normal.woff2); font-weight: 400; }
   @font-face { font-family: Jost; src: url(jost-latin-600-normal.woff2); font-weight: 600; }
   @font-face { font-family: Jost; src: url(jost-latin-700-normal.woff2); font-weight: 700; }
-  :root { --pink:#FCB4CC; --pink-deep:#E8789F; --ink:#2B2326; --cream:#F6EEE6; --taupe:#C9B8A6; --white:#fff; }
+  :root { --pink:#FCB4CC; --rose:#E4B4A8; --butter:#F6F09C; --petal:#EAC6CC; --ink:#2B2326; --cream:#F6EEE6; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: Jost, sans-serif; background: var(--cream); color: var(--ink); padding: 48px; width: 1600px; }
+  body { font-family: Jost, sans-serif; background: var(--cream); color: var(--ink); padding: 48px; width: 1700px; }
   h1 { font-size: 44px; font-weight: 700; letter-spacing: -0.02em; }
   h2 { font-size: 26px; font-weight: 700; margin: 44px 0 16px; }
+  h2 small { font-weight: 400; font-size: 17px; color: #7a6a62; }
   .sub { color: #7a6a62; font-size: 18px; margin-top: 6px; }
-  .note { background: #fff; border-left: 6px solid var(--pink-deep); padding: 14px 18px; margin-top: 20px; font-size: 16px; line-height: 1.45; border-radius: 6px; }
   .grid { display: grid; gap: 16px; }
-  .brand { grid-template-columns: 1.1fr 1fr 1fr; }
   .card { background: #fff; border-radius: 14px; padding: 20px; }
   .card h3 { font-size: 14px; text-transform: uppercase; letter-spacing: .12em; color: #9a8a82; margin-bottom: 12px; }
   .sw { display: flex; gap: 10px; flex-wrap: wrap; }
-  .sw div { width: 92px; font-size: 12px; text-align: center; }
-  .sw i { display: block; height: 64px; border-radius: 10px; margin-bottom: 6px; border: 1px solid #0001; }
+  .sw div { width: 98px; font-size: 12px; text-align: center; line-height: 1.3; }
+  .sw i { display: block; height: 60px; border-radius: 10px; margin-bottom: 6px; border: 1px solid #0001; }
   .pill { display: inline-block; background: var(--pink); color: #fff; font-weight: 600; border-radius: 14px; padding: 0 16px 6px; font-size: 54px; line-height: 1.1; }
-  .type p { margin: 6px 0; }
-  ul { padding-left: 18px; font-size: 15px; line-height: 1.55; }
-  .board { grid-template-columns: repeat(5, 1fr); }
+  ul { padding-left: 18px; font-size: 14.5px; line-height: 1.5; }
+  li { margin-bottom: 3px; }
+  /* reference study */
+  .refs { grid-template-columns: repeat(6, 1fr); }
+  .rf { background: #fff; border-radius: 14px; overflow: hidden; }
+  .rf img { width: 100%; display: block; aspect-ratio: 9/16; object-fit: cover; }
+  .rf .tx { padding: 10px 12px 14px; font-size: 12.5px; line-height: 1.4; }
+  .rf b.t { display: block; font-size: 14.5px; margin-bottom: 4px; }
+  .kv { display: flex; justify-content: space-between; border-bottom: 1px dashed #e8ddd6; padding: 2px 0; }
+  .kv span:last-child { font-weight: 600; }
+  /* storyboard */
+  .board { grid-template-columns: repeat(7, 1fr); }
   .sc { background: #fff; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; }
-  .fr { position: relative; aspect-ratio: 9/16; background: #000 center/cover; }
-  .fr .ov { position: absolute; left: 0; right: 0; text-align: center; font-weight: 600; color: #fff; }
-  .fr .ov.top { top: 12%; } .fr .ov.mid { top: 55%; } .fr .ov.low { top: 72%; }
-  .fr .p { background: var(--pink); border-radius: 8px; padding: 0 8px 3px; font-size: 22px; display: inline-block; }
-  .fr .w { font-size: 13px; text-shadow: 0 1px 3px #0008; }
-  .fr .cap { font-size: 16px; background: #0006; padding: 2px 8px; border-radius: 6px; }
-  .fr .tc { position: absolute; top: 8px; left: 8px; background: #000a; color: #fff; font-size: 12px; padding: 2px 8px; border-radius: 6px; }
-  .fr .num { position: absolute; top: 8px; right: 8px; background: var(--pink-deep); color: #fff; font-size: 13px; font-weight: 700; padding: 2px 9px; border-radius: 99px; }
+  .fr { position: relative; aspect-ratio: 9/16; background: #000 center/cover; overflow: hidden; }
+  .fr .ov { position: absolute; left: 4%; right: 4%; text-align: center; font-weight: 600; color: #fff; line-height: 1.25; }
+  .top { top: 11%; } .mid { top: 45%; } .low { top: 70%; }
+  .p { background: var(--pink); border-radius: 7px; padding: 0 7px 2px; font-size: 17px; display: inline-block; }
+  .w { font-size: 11.5px; text-shadow: 0 1px 3px #0009; }
+  .cb { background: rgba(228,180,168,.88); padding: 2px 7px; font-size: 12.5px; display: inline-block; margin-top: 2px; }
+  .st { background: var(--butter); color: var(--ink); padding: 1px 7px; font-size: 13px; font-weight: 700; display: inline-block; margin-top: 3px; }
+  .tag { background: #fff; color: var(--ink); font-size: 9.5px; padding: 2px 6px; border: 1px solid #b9a; display: inline-block; font-weight: 600; }
+  .wm { position: absolute; top: 5%; left: 5%; background: var(--pink); color: #fff; font-size: 9px; font-weight: 700; padding: 1px 5px 2px; border-radius: 4px; }
+  .tc { position: absolute; bottom: 6px; left: 6px; background: #000a; color: #fff; font-size: 11px; padding: 1px 6px; border-radius: 5px; }
+  .num { position: absolute; bottom: 6px; right: 6px; background: var(--ink); color: #fff; font-size: 11px; font-weight: 700; padding: 1px 7px; border-radius: 99px; }
   .split { display: grid; grid-template-columns: 1fr 1fr; height: 100%; }
   .split div { background: center/cover; position: relative; }
-  .split span { position: absolute; bottom: 10px; left: 0; right: 0; text-align: center; color: #fff; font-weight: 700; font-size: 14px; text-shadow: 0 1px 3px #000a; }
-  .tx { padding: 12px 14px 16px; font-size: 13.5px; line-height: 1.45; }
-  .tx b.t { display: block; font-size: 16px; margin-bottom: 4px; }
-  .tx .k { color: #9a8a82; font-size: 11px; text-transform: uppercase; letter-spacing: .1em; margin-top: 8px; display: block; }
-  .tx .vo { font-style: italic; }
-  .bar { display: flex; height: 34px; border-radius: 8px; overflow: hidden; font-size: 12px; font-weight: 600; color: #fff; margin-top: 6px; }
+  .split span { position: absolute; bottom: 30px; left: 0; right: 0; text-align: center; color: #fff; font-weight: 700; font-size: 12px; text-shadow: 0 1px 3px #000a; }
+  .line { position: absolute; top: 0; bottom: 0; left: 50%; width: 2px; background: #fff; }
+  .sc .tx { padding: 9px 11px 13px; font-size: 12px; line-height: 1.4; }
+  .sc b.t { display: block; font-size: 13.5px; margin-bottom: 3px; }
+  .k { color: #9a8a82; font-size: 10px; text-transform: uppercase; letter-spacing: .1em; margin-top: 6px; display: block; }
+  .vo { font-style: italic; }
+  .ref { display: inline-block; background: #efe6df; color: #6a5a52; font-size: 10px; border-radius: 4px; padding: 0 5px; margin-top: 5px; }
+  .bar { display: flex; height: 34px; border-radius: 8px; overflow: hidden; font-size: 11px; font-weight: 600; color: #fff; margin-top: 6px; }
   .bar div { display: flex; align-items: center; justify-content: center; border-right: 2px solid var(--cream); }
 </style>
 </head>
 <body>
   <h1>Sara's <span class="pill" style="font-size:40px;border-radius:10px;padding:0 12px 4px">glow up</span> series — De-puff episode</h1>
-  <p class="sub">Brand sheet + storyboard · v2 draft for approval · source: De-puff_ep._33.mov (63.4s, 480×854, no audio) → export 1080×1920, ~37.5s</p>
-  <div class="note"><b>Reference reels not yet studied.</b> The 5 Instagram links couldn't be downloaded because this cloud session's network blocks instagram.com.
-    This v1 brand sheet comes from the look already in your own footage (your existing title card). Once you upload the 5 reels as files, I'll fold their fonts, colors, captions and pacing in and send v2 before exporting.</div>
+  <p class="sub">Brand sheet + storyboard · <b>v3</b> (now built from your 6 reference reels) · source: De-puff_ep._33.mov → export 1080×1920, ~40s · not exported yet</p>
 
-  <h2>1 · Brand sheet</h2>
-  <div class="grid brand">
+  <h2>1 · What the 6 reference reels do <small>· all Korean; full translations in reference-translations.md</small></h2>
+  <div class="grid refs">
+    <div class="rf"><img src="refs/r1.jpg"><div class="tx"><b class="t">Ref 1 · mini pani vlog</b>
+      <div class="kv"><span>length</span><span>57s</span></div><div class="kv"><span>avg shot</span><span>2.3s</span></div>
+      Pastel green box, black text, <b>Korean + English</b> on two lines. Series title bookends the open and close. Funny cutaway (the cat).</div></div>
+    <div class="rf"><img src="refs/r2.jpg"><div class="tx"><b class="t">Ref 2 · ohora nails</b>
+      <div class="kv"><span>length</span><span>34s</span></div><div class="kv"><span>avg shot</span><span>2.3s</span></div>
+      Thin white text with no box, at the top. Starts with a story ("my nails stole the spotlight"), then a stacked before/after and a sale CTA.</div></div>
+    <div class="rf"><img src="refs/r3.jpg"><div class="tx"><b class="t">Ref 3 · VDIVICI BB</b>
+      <div class="kv"><span>length</span><span>40s</span></div><div class="kv"><span>avg shot</span><span>1.6s</span></div>
+      Black box with white text, plus a <b>pink sub-box</b> for product facts. A vertical series watermark (한끗차이) stays on the whole time. Macro skin close-ups. "Rule 1 / Rule 2" structure.</div></div>
+    <div class="rf"><img src="refs/r4.jpg"><div class="tx"><b class="t">Ref 4 · Anua gua sha ★ closest</b>
+      <div class="kv"><span>length</span><span>28s</span></div><div class="kv"><span>avg shot</span><span>0.9s</span></div>
+      Fastest cutting. <b>Half-face before/after with a centre line and arrow</b>. Dusty-rose caption box, 1–3 words at a time. Pink end card with the series logo.</div></div>
+    <div class="rf"><img src="refs/r5.jpg"><div class="tx"><b class="t">Ref 5 · Rejuran ampoule</b>
+      <div class="kv"><span>length</span><span>33s</span></div><div class="kv"><span>avg shot</span><span>2.6s</span></div>
+      <b>Problem hook</b> ("dry no matter what…?") over a macro. A big serif headline for the turn ("surprisingly simple fix!"). <b>Butter-yellow keywords.</b> Texture swatch on the hand.</div></div>
+    <div class="rf"><img src="refs/r6.jpg"><div class="tx"><b class="t">Ref 6 · Klairs EGF drop</b>
+      <div class="kv"><span>length</span><span>35s</span></div><div class="kv"><span>avg shot</span><span>2.9s</span></div>
+      Product-name <b>tag above the caption</b>, then the ingredient explained. The <b>stat goes in a yellow box</b> ("EGF 10ppm"). A <b>3×3 progress grid</b>. Stacked before/after.</div></div>
+  </div>
+
+  <h2>2 · Brand sheet v3 <small>· your existing look + what the references do</small></h2>
+  <div class="grid" style="grid-template-columns:1.15fr 1fr 1.25fr">
     <div class="card">
       <h3>Colors</h3>
       <div class="sw">
-        <div><i style="background:#FCB4CC"></i>Glow Pink<br>#FCB4CC<br><small>title pill, step badges</small></div>
-        <div><i style="background:#E8789F"></i>Deep Rose<br>#E8789F<br><small>accents, progress</small></div>
-        <div><i style="background:#FFFFFF"></i>White<br>#FFFFFF<br><small>all text</small></div>
-        <div><i style="background:#2B2326"></i>Cocoa Ink<br>#2B2326<br><small>text shadow / bg</small></div>
-        <div><i style="background:#C9B8A6"></i>Bathroom Taupe<br>#C9B8A6<br><small>footage base tone</small></div>
-        <div><i style="background:#D9DDE2"></i>Product Silver<br>#D9DDE2<br><small>product callouts</small></div>
+        <div><i style="background:#FCB4CC"></i><b>Glow Pink</b><br>#FCB4CC<br>titles, step pills, series mark <small>(yours)</small></div>
+        <div><i style="background:#E4B4A8;opacity:.9"></i><b>Dusty Rose 88%</b><br>#E4B4A8<br>spoken-caption box <small>(Ref 4)</small></div>
+        <div><i style="background:#F6F09C"></i><b>Butter</b><br>#F6F09C<br>stats & keywords <small>(Refs 5, 6)</small></div>
+        <div><i style="background:#FFFFFF"></i><b>White</b><br>#FFFFFF<br>all text on footage, product tag</div>
+        <div><i style="background:#2B2326"></i><b>Cocoa Ink</b><br>#2B2326<br>text on butter or white</div>
+        <div><i style="background:#EAC6CC"></i><b>Petal</b><br>#EAC6CC<br>end card <small>(Ref 4)</small></div>
       </div>
-      <p style="font-size:13px;margin-top:12px;color:#7a6a62">Pink was sampled straight from your existing "glow up" pill. The warm taupe of your footage makes the pink pop, so keep the grade warm and soft. Don't push it cool.</p>
-    </div>
-    <div class="card type">
-      <h3>Fonts</h3>
-      <p><span class="pill">glow up</span></p>
-      <p style="font-size:14px">Display: <b>Jost SemiBold</b> (free Futura-style match for your current title font), lowercase, white on a pink pill, rounded 14px</p>
-      <p style="font-size:22px;font-weight:600">Sara's · step labels</p>
-      <p style="font-size:14px">Labels: Jost SemiBold, white with a soft shadow</p>
-      <p style="font-size:15px">small context line · ep. 2 · de-puff & instant face lift</p>
-      <p style="font-size:14px">Small text: Jost Regular, lowercase, kept quiet</p>
+      <p style="font-size:12.5px;margin-top:10px;color:#7a6a62">All six references keep the grade soft, warm and bright with no heavy filters. Your warm bathroom light already fits. I'll lift exposure slightly and warm the whites a touch.</p>
     </div>
     <div class="card">
-      <h3>Captions · Pacing · Motion</h3>
+      <h3>Fonts</h3>
+      <p><span class="pill">glow up</span></p>
+      <p style="font-size:13px;margin:6px 0 10px"><b>Titles / steps:</b> Jost SemiBold, lowercase, white on a pink pill</p>
+      <p><span style="background:rgba(228,180,168,.9);color:#fff;font-weight:600;padding:3px 10px;font-size:20px">across the cheeks</span></p>
+      <p style="font-size:13px;margin:6px 0 10px"><b>Captions:</b> Pretendard SemiBold (the standard Korean-reel sans, with Hangul and Latin) on a square dusty-rose box</p>
+      <p><span style="background:#F6F09C;font-weight:700;padding:2px 10px;font-size:22px">caffeine 1%</span> <span style="border:1px solid #b9a;font-size:12px;padding:2px 6px;font-weight:600">VT Cosmetics | V-Mode Gua Sha Cream</span></p>
+      <p style="font-size:13px;margin-top:6px"><b>Stats:</b> Bold in a butter box. <b>Product tag:</b> small white box above the stat (Ref 6)</p>
+    </div>
+    <div class="card">
+      <h3>Captions · Pacing · Signatures</h3>
       <ul>
-        <li><b>Captions:</b> lowercase Jost, 2–4 words at a time, white with a soft shadow, lower third (above the IG UI). The key word in each line highlights pink.</li>
-        <li><b>Korean:</b> keep Korean words as a signature ("annyeong") with English underneath in small text.</li>
-        <li><b>Hook:</b> show the result first, within 1.5 seconds.</li>
-        <li><b>Pacing:</b> a new shot or text change every <b>1–2 seconds</b>. Long takes run at 1.8–2.4× speed. Target length about 37s, down from 63s.</li>
-        <li><b>Motion:</b> pills pop in with a springy scale-up from 0.6 to 1 (0.25s). Step badges slide up 40px. Gentle 3–5% punch-ins on cuts.</li>
-        <li><b>Structure:</b> annyeong hook → series title → product explainer → 6 numbered steps (acupressure first) → before/after → CTA + annyeong</li><li><b>Signature:</b> every episode opens and closes with "annyeong"</li>
+        <li><b>Captions:</b> one short phrase at a time (1–5 words), changing every <b>1–1.5s</b> in sync with your voice. Centred at about 70% height, above the IG/TikTok buttons. <small>(all refs)</small></li>
+        <li><b>Pacing:</b> the references average <b>0.9–2.9s per shot</b> (Ref 4 is fastest at 0.9s). Run at about 1.5–2s and add a 4% punch-in whenever a shot runs longer.</li>
+        <li><b>Hook ≤ 3s:</b> show the problem first ("…?"), then the result. <small>(Refs 5, 6)</small></li>
+        <li><b>Product named by about 6s,</b> with an ingredient explained by a stat box. <small>(Refs 3, 5, 6)</small></li>
+        <li><b>Series mark</b> stays small at the top for the whole video. <small>(Refs 3, 4)</small></li>
+        <li><b>Bookends:</b> "annyeong" opens and closes every episode, with <b>안녕 + English</b>. <small>(Ref 1 bilingual)</small></li>
+        <li><b>Proof:</b> a progress grid and a half-face before/after. <small>(Refs 4, 6)</small></li>
+        <li><b>Ending:</b> CTA, then a 1s pink end card with the series logo. <small>(Ref 4)</small></li>
+        <li><b>Music:</b> all refs have a soft background track under the voice. Add a trending sound in-app at low volume.</li>
       </ul>
     </div>
   </div>
 
-  <h2>2 · Storyboard v2 <span style="font-weight:400;font-size:17px;color:#7a6a62">· output timecodes · source clip times in grey · opens and closes with "annyeong"</span></h2>
-  <div class="grid board" style="grid-template-columns:repeat(6,1fr)">
+  <h2>3 · Storyboard v3 <small>· output timecodes · technique source in grey tags</small></h2>
+  <div class="grid board">
 
-    <div class="sc"><div class="fr" style="background-image:url(thumbs/s1.jpg)"><span class="tc">0:00–0:02.0</span><span class="num">1</span>
-      <div class="ov top"><span class="p">puffy → snatched</span><br><span class="w">in 5 minutes ⬇</span></div></div>
-      <div class="tx"><b class="t">Hook: annyeong + result</b>src 61.3–62.3s, slowed slightly, 3% zoom in<span class="k">Animation</span>pill pops in with a springy scale-up<span class="k">Voiceover</span><span class="vo">"Annyeong! Puffy face? Give me five minutes."</span></div></div>
+    <div class="sc"><div class="fr" style="background-image:url(thumbs/hook_before.jpg)">
+      <div class="ov mid"><span class="cb" style="font-size:15px">puffy morning face…?</span></div><span class="tc">0:00–1.3</span><span class="num">1</span></div>
+      <div class="tx"><b class="t">Problem hook</b>src 12–13s, cropped in tight on your face, before any massage<span class="k">Animation</span>caption types on<span class="k">VO</span><span class="vo">"Annyeong! Puffy morning face…?"</span><br><span class="ref">Ref 5 · 6 problem-first</span></div></div>
 
-    <div class="sc"><div class="fr" style="background-image:url(thumbs/s2.jpg)"><span class="tc">0:02.0–0:04.7</span><span class="num">2</span>
-      <div class="ov top" style="top:17%"><span class="cap">annyeong! 👋</span><br><span class="w">(Korean for "hi!")</span></div></div>
-      <div class="tx"><b class="t">Series title</b>src 0–2.7s · keeps your title card<span class="k">Animation</span>Korean + English caption above the title card<span class="k">Voiceover</span><span class="vo">"Welcome back to my glow up series."</span></div></div>
+    <div class="sc"><div class="fr" style="background-image:url(thumbs/s1.jpg)">
+      <div class="ov top"><span class="p">5 minutes later ✨</span></div><span class="tc">0:01.3–2.6</span><span class="num">2</span></div>
+      <div class="tx"><b class="t">Result flash</b>src 61.3–62.3s, slow 3% zoom<span class="k">Animation</span>hard cut, pill pops in<span class="k">VO</span><span class="vo">"Give me five minutes."</span><br><span class="ref">Ref 5 "simple fix!"</span></div></div>
 
-    <div class="sc"><div class="fr" style="background-image:url(thumbs/s12.jpg)"><span class="tc">0:04.7–0:12.7</span><span class="num">3</span>
-      <div class="ov top"><span class="p">vt v-mode gua sha cream</span><br><span class="w">twist to ON → built-in gua sha</span></div>
-      <div class="ov mid"><span class="cap">caffeine 1% · de-puff</span><br><span class="cap">retinal + 9 peptides · firm</span><br><span class="cap">hyaluronic acid + niacinamide · glow</span></div></div>
-      <div class="tx"><b class="t">Product explainer</b>src 2.7–11.4s at 1.1× · 6 cuts<span class="k">Animation</span>Name pill slides down. A "twist → ON" arrow shows on the 6s twist shot. The 3 benefit chips stack in one at a time. A small note sits at the bottom: "has retinal: SPF by day".<span class="k">Voiceover</span><span class="vo">"This is VT's V-Mode Gua Sha Cream. Twist it on, and the tip becomes your gua sha. Caffeine to de-puff, retinal and peptides to firm."</span></div></div>
+    <div class="sc"><div class="fr" style="background-image:url(thumbs/s2.jpg)">
+      <div class="ov top" style="top:16%"><span class="cb">annyeong! 안녕</span><br><span class="w">= "hi!" in Korean</span></div><span class="tc">0:02.6–5.3</span><span class="num">3</span></div>
+      <div class="tx"><b class="t">Series intro</b>src 0–2.7s · keeps your title card<span class="k">Animation</span>bilingual caption fades in<span class="k">VO</span><span class="vo">"Welcome back to my glow up series."</span><br><span class="ref">Ref 1 bilingual + bookend</span></div></div>
 
-    <div class="sc"><div class="fr" style="background-image:url(thumbs/s4.jpg)"><span class="tc">0:12.7–0:17.7</span><span class="num">4</span>
-      <div class="ov top"><span class="p">01 · press the points</span><br><span class="w">chin · nose · under-eyes · brows · temples</span></div></div>
-      <div class="tx"><b class="t">Step 1: acupressure first</b>src 11.4–21.3s at 2×<span class="k">Animation</span>A pink dot pulses on each point as you press it. A 1/6 progress bar runs along the top.<span class="k">Voiceover</span><span class="vo">"First, press these points with the tip to wake up drainage."</span></div></div>
+    <div class="sc"><div class="fr" style="background-image:url(thumbs/s12.jpg)"><span class="wm">glow up</span>
+      <div class="ov top"><span class="tag">VT Cosmetics | V-Mode Gua Sha Cream</span><br><span class="st">caffeine 1% → de-puff</span><br><span class="st">retinal + 9 peptides → firm</span></div>
+      <div class="ov low"><span class="cb">twist to ON = built-in gua sha</span></div><span class="tc">0:05.3–12.5</span><span class="num">4</span></div>
+      <div class="tx"><b class="t">Product explainer</b>src 2.7–11.4s at 1.2× · 6 cuts<span class="k">Animation</span>The tag slides down, then the butter stat boxes stack in on the beat. A "twist" arrow appears on the 6s twist shot. Small print: "has retinal · SPF by day".<span class="k">VO</span><span class="vo">"This is VT's V-Mode Gua Sha Cream. Twist it on and the tip is your gua sha. Caffeine to de-puff, retinal and peptides to firm."</span><br><span class="ref">Ref 6 tag + stat box</span></div></div>
 
-    <div class="sc"><div class="fr" style="background-image:url(thumbs/s11.jpg)"><span class="tc">0:17.7–0:19.2</span><span class="num">5</span>
-      <div class="ov top"><span class="p">02 · squeeze + spread</span></div></div>
-      <div class="tx"><b class="t">Step 2: cream on</b>src 21.4–26.5s at 3.4× (quick flash)<span class="k">Animation</span>Fast-forward ▶▶ icon. Progress 2/6.<span class="k">Voiceover</span><span class="vo">"Squeeze some on and spread it with your fingers."</span></div></div>
+    <div class="sc"><div class="fr" style="background-image:url(thumbs/s4.jpg)"><span class="wm">glow up</span>
+      <div class="ov top"><span class="p">01 · press the points</span></div>
+      <div class="ov low"><span class="cb">wake up drainage first</span></div><span class="tc">0:12.5–17.5</span><span class="num">5</span></div>
+      <div class="tx"><b class="t">Step 1: acupressure</b>src 11.4–21.3s at 2×<span class="k">Animation</span>A pink dot pulses on each point you press. The progress bar fills 1/6.<span class="k">VO</span><span class="vo">"First, press these points with the tip to wake up drainage."</span><br><span class="ref">Ref 3 "Rule 1" numbering</span></div></div>
 
-    <div class="sc"><div class="fr" style="background-image:url(thumbs/s5.jpg)"><span class="tc">0:19.2–0:22.2</span><span class="num">6</span>
-      <div class="ov top"><span class="p">03 · forehead</span><br><span class="w">sweep up & out ↗</span></div></div>
-      <div class="tx"><b class="t">Step 3: forehead</b>src 27–31s at 1.3×<span class="k">Animation</span>An arrow traces the stroke. Progress 3/6.<span class="k">Voiceover</span><span class="vo">"Forehead: sweep up and out to the temples."</span></div></div>
+    <div class="sc"><div class="fr" style="background-image:url(thumbs/texture.jpg)"><span class="wm">glow up</span>
+      <div class="ov top"><span class="p">02 · squeeze + spread</span></div><span class="tc">0:17.5–19.3</span><span class="num">6</span></div>
+      <div class="tx"><b class="t">Step 2: texture + spread</b>Texture close-up: src 22.3–23.0s, slowed and zoomed 1.6×. Then the hand spreading at 3.4× ▶▶.<span class="k">VO</span><span class="vo">"Squeeze some on and spread it with your fingers."</span><br><span class="ref">Ref 5 · 6 texture swatch</span></div></div>
 
-    <div class="sc"><div class="fr" style="background-image:url(thumbs/s6.jpg)"><span class="tc">0:22.2–0:25.2</span><span class="num">7</span>
-      <div class="ov top"><span class="p">04 · under-eyes</span><br><span class="w">cheeks → temples</span></div></div>
-      <div class="tx"><b class="t">Step 4: under-eyes & cheeks</b>src 32–37.5s at 1.8× · the 38–39s top-up is cut<span class="k">Animation</span>4% punch-in. Progress 4/6.<span class="k">Voiceover</span><span class="vo">"Under the eyes and across the cheeks, toward your ears."</span></div></div>
+    <div class="sc"><div class="fr" style="background-image:url(thumbs/s5.jpg)"><span class="wm">glow up</span>
+      <div class="ov top"><span class="p">03 · forehead</span></div>
+      <div class="ov low"><span class="cb">sweep up & out</span></div><span class="tc">0:19.3–22.3</span><span class="num">7</span></div>
+      <div class="tx"><b class="t">Step 3: forehead</b>src 27–31s at 1.3×<span class="k">Animation</span>An arrow traces the stroke. 2 shots, so it cuts every 1.5s.<span class="k">VO</span><span class="vo">"Forehead: sweep up and out to the temples."</span><br><span class="ref">Ref 4 pacing</span></div></div>
 
-    <div class="sc"><div class="fr" style="background-image:url(thumbs/s7.jpg)"><span class="tc">0:25.2–0:28.7</span><span class="num">8</span>
-      <div class="ov top"><span class="p">05 · jawline</span><br><span class="w">chin → ear</span></div></div>
-      <div class="tx"><b class="t">Step 5: jawline</b>src 39.5–47.5s at 2.3×<span class="k">Animation</span>"snatch" highlights pink. Progress 5/6.<span class="k">Voiceover</span><span class="vo">"Chin to ear along the jawline. This is the snatch."</span></div></div>
+    <div class="sc"><div class="fr" style="background-image:url(thumbs/s6.jpg)"><span class="wm">glow up</span>
+      <div class="ov top"><span class="p">04 · under-eyes</span></div>
+      <div class="ov low"><span class="cb">toward your <span style="background:#F6F09C;color:#2B2326;padding:0 3px">ears</span></span></div><span class="tc">0:22.3–25.3</span><span class="num">8</span></div>
+      <div class="tx"><b class="t">Step 4: under-eyes & cheeks</b>src 32–37.5s at 1.8× · the 38–39s top-up is cut<span class="k">Animation</span>Cuts to a macro on the under-eye stroke, with a butter keyword.<span class="k">VO</span><span class="vo">"Under the eyes and across the cheeks, toward your ears."</span><br><span class="ref">Ref 3 macro · Ref 5 keyword</span></div></div>
 
-    <div class="sc"><div class="fr" style="background-image:url(thumbs/s8.jpg)"><span class="tc">0:28.7–0:33.2</span><span class="num">9</span>
-      <div class="ov top"><span class="p">06 · drain the neck</span><br><span class="w">down to collarbones ↓</span></div></div>
-      <div class="tx"><b class="t">Step 6: drain</b>src 48–60s at 2.7×<span class="k">Animation</span>A downward arrow animates. Progress 6/6.<span class="k">Voiceover</span><span class="vo">"Then drain down the neck to your collarbones."</span></div></div>
+    <div class="sc"><div class="fr" style="background-image:url(thumbs/s7.jpg)"><span class="wm">glow up</span>
+      <div class="ov top"><span class="p">05 · jawline</span></div>
+      <div class="ov low"><span class="cb">this is the <span style="background:#F6F09C;color:#2B2326;padding:0 3px">snatch</span></span></div><span class="tc">0:25.3–28.8</span><span class="num">9</span></div>
+      <div class="tx"><b class="t">Step 5: jawline</b>src 39.5–47.5s at 2.3×<span class="k">Animation</span>The keyword pops in butter. Progress 5/6.<span class="k">VO</span><span class="vo">"Chin to ear along the jawline. This is the snatch."</span><br><span class="ref">Ref 5 keyword highlight</span></div></div>
 
-    <div class="sc"><div class="fr"><span class="tc" style="z-index:2">0:33.2–0:35.0</span><span class="num" style="z-index:2">10</span><div class="split"><div style="background-image:url(thumbs/s9.jpg)"><span>before</span></div><div style="background-image:url(thumbs/s10.jpg)"><span>after ✨</span></div></div></div>
-      <div class="tx"><b class="t">Before / after</b>src 12.0s vs 61.8s<span class="k">Animation</span>A wipe divider slides in. Labels pop in.<span class="k">Voiceover</span><span class="vo">"Five minutes. Instantly de-puffed."</span></div></div>
+    <div class="sc"><div class="fr" style="background-image:url(thumbs/s8.jpg)"><span class="wm">glow up</span>
+      <div class="ov top"><span class="p">06 · drain the neck</span></div>
+      <div class="ov low"><span class="cb">down to the collarbones ↓</span></div><span class="tc">0:28.8–33.3</span><span class="num">10</span></div>
+      <div class="tx"><b class="t">Step 6: lymph drain</b>src 48–60s at 2.7×<span class="k">Animation</span>A downward arrow animates. Progress 6/6.<span class="k">VO</span><span class="vo">"Then drain down the neck to your collarbones."</span></div></div>
 
-    <div class="sc"><div class="fr" style="background-image:url(thumbs/s10.jpg)"><span class="tc">0:35.0–0:37.5</span><span class="num">11</span>
-      <div class="ov mid"><span class="p">follow for ep. 3 💗</span><br><span class="w">annyeong! 👋</span></div></div>
-      <div class="tx"><b class="t">Outro wave + annyeong</b>src 61.3–63.4s + short hold<span class="k">Animation</span>The CTA pill bounces in, then "annyeong!" waves in on your wave.<span class="k">Voiceover</span><span class="vo">"Save this and follow for episode three. Annyeong!"</span></div></div>
+    <div class="sc"><div class="fr" style="background:#fff url(thumbs/grid.jpg) center/contain no-repeat">
+      <div class="ov" style="top:66%"><span class="st">6 steps · 5 minutes</span></div><span class="tc">0:33.3–34.8</span><span class="num">11</span></div>
+      <div class="tx"><b class="t">Recap grid</b>All 6 step clips play at once in a 2×3 grid<span class="k">Animation</span>The tiles pop in one by one, 0.1s apart<span class="k">VO</span><span class="vo">"Six steps, five minutes."</span><br><span class="ref">Ref 6 progress grid</span></div></div>
+
+    <div class="sc"><div class="fr"><div class="split"><div style="background-image:url(thumbs/s9.jpg)"><span>before<br>puffy</span></div><div style="background-image:url(thumbs/s10.jpg)"><span>after ✨<br>snatched</span></div></div><div class="line"></div><span class="tc">0:34.8–36.8</span><span class="num">12</span></div>
+      <div class="tx"><b class="t">Before / after</b>src 12.0s vs 61.8s, faces lined up on a centre line<span class="k">Animation</span>The line wipes across, a curved arrow draws in, and the labels pop in.<span class="k">VO</span><span class="vo">"Instantly de-puffed."</span><br><span class="ref">Ref 4 half-face · Ref 3 labels</span></div></div>
+
+    <div class="sc"><div class="fr" style="background-image:url(thumbs/s10.jpg)">
+      <div class="ov mid"><span class="p">follow for ep. 3 💗</span><br><span class="cb">annyeong! 안녕 = bye!</span></div><span class="tc">0:36.8–39.3</span><span class="num">13</span></div>
+      <div class="tx"><b class="t">Outro wave</b>src 61.3–63.4s<span class="k">Animation</span>The CTA pill bounces in, and the bilingual "annyeong" appears on your wave.<span class="k">VO</span><span class="vo">"Save this and follow for episode three. Annyeong!"</span><br><span class="ref">Ref 1 "see you next vlog"</span></div></div>
+
+    <div class="sc"><div class="fr" style="background:#EAC6CC;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#fff">
+      <div style="font-size:15px;font-weight:600">Sara's</div><div class="p" style="font-size:28px;background:#fff;color:#E8789F">glow up</div><div style="font-size:12px;margin-top:4px">series</div><span class="tc">0:39.3–40.3</span><span class="num">14</span></div>
+      <div class="tx"><b class="t">End card</b>1s petal-pink card with the series logo<span class="k">Animation</span>quick fade-through from the last frame<span class="k">VO</span>(music only)<br><span class="ref">Ref 4 pink end card</span></div></div>
   </div>
 
-  <h2>3 · Pacing map</h2>
+  <h2>4 · Pacing map</h2>
   <div class="bar">
-    <div style="flex:2;background:#E8789F">hook</div><div style="flex:2.7;background:#d79bb0">hi</div><div style="flex:8;background:#b7a596">product</div>
-    <div style="flex:5;background:#FCB4CC">01 points</div><div style="flex:1.5;background:#f5a3bf">02</div><div style="flex:3;background:#FCB4CC">03</div><div style="flex:3;background:#f5a3bf">04</div>
-    <div style="flex:3.5;background:#FCB4CC">05</div><div style="flex:4.5;background:#f5a3bf">06</div><div style="flex:1.8;background:#E8789F">b/a</div><div style="flex:2.5;background:#d79bb0">bye</div>
+    <div style="flex:1.3;background:#2B2326">hook</div><div style="flex:1.3;background:#E8789F">result</div><div style="flex:2.7;background:#d79bb0">hi</div><div style="flex:7.2;background:#b7a596">product + stats</div>
+    <div style="flex:5;background:#FCB4CC">01 points</div><div style="flex:1.8;background:#f5a3bf">02</div><div style="flex:3;background:#FCB4CC">03</div><div style="flex:3;background:#f5a3bf">04</div>
+    <div style="flex:3.5;background:#FCB4CC">05</div><div style="flex:4.5;background:#f5a3bf">06</div><div style="flex:1.5;background:#b7a596">grid</div><div style="flex:2;background:#E8789F">b/a</div><div style="flex:2.5;background:#d79bb0">bye</div><div style="flex:1;background:#EAC6CC">end</div>
   </div>
-  <p class="sub" style="font-size:14px">≈ 37.5s total · original 63s</p>
+  <p class="sub" style="font-size:14px">≈ 40s total (references run 28–57s, most 33–40s) · original 63s · about 30 cuts, so roughly one every 1.3s</p>
 </body>
 </html>
