@@ -2,14 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Sara's Glow Up — Scalp edition · Brand sheet + Shooting storyboard v1</title>
+<title>Sara's Glow Up series — Scalp care episode · Storyboard v3</title>
 <style>
   @font-face { font-family: Jost; src: url(jost-latin-400-normal.woff2); font-weight: 400; }
   @font-face { font-family: Jost; src: url(jost-latin-600-normal.woff2); font-weight: 600; }
   @font-face { font-family: Jost; src: url(jost-latin-700-normal.woff2); font-weight: 700; }
-  @font-face { font-family: Pretendard; src: url(Pretendard-SemiBold.woff2); font-weight: 600; }
-  @font-face { font-family: Pretendard; src: url(Pretendard-Bold.woff2); font-weight: 700; }
-  :root { --pink:#FCB4CC; --teal:#58E0F0; --rose:#D6968C; --butter:#F6F09C; --ink:#2B2326; --cream:#F6EEE6; --silver:#D9DDE2; }
+  :root { --pink:#F7B3C9; --teal:#58E0F0; --ink:#2B2326; --cream:#F6EEE6; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: Jost, sans-serif; background: var(--cream); color: var(--ink); padding: 48px; width: 1800px; }
   h1 { font-size: 44px; font-weight: 700; letter-spacing: -0.02em; }
@@ -20,191 +18,230 @@
   .card { background: #fff; border-radius: 14px; padding: 20px; }
   .card h3 { font-size: 14px; text-transform: uppercase; letter-spacing: .12em; color: #9a8a82; margin-bottom: 12px; }
   ul { padding-left: 18px; font-size: 14.5px; line-height: 1.5; } li { margin-bottom: 3px; }
-  .pill { display: inline-block; background: var(--pink); color: #fff; font-weight: 600; border-radius: 12px; padding: 0 14px 5px; line-height: 1.15; }
+  .pill { display: inline-block; background: var(--pink); color: #fff; font-weight: 600; border-radius: 8px; padding: 0 12px 4px; line-height: 1.2; border: 2px solid #fff; }
+  /* refs */
   .refs { grid-template-columns: repeat(4, 1fr); }
-  .rf { background: #fff; border-radius: 14px; overflow: hidden; display: grid; grid-template-columns: 150px 1fr; }
-  .rf img { width: 150px; height: 267px; object-fit: cover; display: block; }
-  .rf .tx { padding: 12px 14px; font-size: 12.5px; line-height: 1.42; }
-  .rf b.t { display: block; font-size: 15px; margin-bottom: 4px; }
-  .kv { display: flex; justify-content: space-between; border-bottom: 1px dashed #e8ddd6; padding: 1px 0; font-size: 12px; }
+  .rf { background: #fff; border-radius: 14px; overflow: hidden; display: grid; grid-template-columns: 140px 1fr; }
+  .rf img { width: 140px; height: 249px; object-fit: cover; display: block; }
+  .rf .tx { padding: 10px 12px; font-size: 12px; line-height: 1.4; }
+  .rf b.t { display: block; font-size: 14.5px; margin-bottom: 3px; }
+  .kv { display: flex; justify-content: space-between; border-bottom: 1px dashed #e8ddd6; padding: 1px 0; font-size: 11.5px; }
   .kv span:last-child { font-weight: 600; }
+  /* series format */
+  .series { grid-template-columns: repeat(4, 150px) 1fr; align-items: start; }
+  .series figure { background: #fff; border-radius: 12px; overflow: hidden; }
+  .series img { width: 150px; display: block; }
+  .series figcaption { font-size: 11.5px; padding: 6px 8px; line-height: 1.3; }
   .sw { display: flex; gap: 10px; flex-wrap: wrap; }
-  .sw div { width: 96px; font-size: 11.5px; text-align: center; line-height: 1.3; }
-  .sw i { display: block; height: 56px; border-radius: 10px; margin-bottom: 5px; border: 1px solid #0001; }
-  .board { grid-template-columns: repeat(8, 1fr); }
+  .sw div { width: 100px; font-size: 11.5px; text-align: center; line-height: 1.3; }
+  .sw i { display: block; height: 50px; border-radius: 10px; margin-bottom: 5px; border: 1px solid #0001; }
+  /* storyboard */
+  .board { grid-template-columns: repeat(9, 1fr); }
   .sc { background: #fff; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; }
   .fr { position: relative; aspect-ratio: 9/16; overflow: hidden; display: flex; align-items: center; justify-content: center; flex-direction: column; }
-  .fr .shot { font-size: 46px; opacity: .9; }
-  .fr .lbl { font-size: 11px; font-weight: 600; color: #6a5a52; text-transform: uppercase; letter-spacing: .08em; margin-top: 4px; text-align: center; padding: 0 8px; }
-  .ov { position: absolute; left: 5%; right: 5%; text-align: center; color: #fff; font-family: Pretendard; font-weight: 600; line-height: 1.25; }
-  .top { top: 9%; } .low { top: 66%; }
-  .p { background: var(--pink); border-radius: 6px; padding: 0 6px 2px; font-family: Jost; font-size: 14px; display: inline-block; }
-  .cb { background: var(--rose); padding: 2px 6px; font-size: 11.5px; display: inline-block; }
-  .st { background: var(--butter); color: var(--ink); padding: 1px 6px; font-size: 11.5px; font-weight: 700; display: inline-block; margin-top: 3px; }
-  .tag { background: #fff; color: var(--ink); font-size: 9px; padding: 2px 5px; border: 1.5px solid var(--ink); display: inline-block; font-weight: 700; }
-  .tc { position: absolute; bottom: 6px; left: 6px; background: #000a; color: #fff; font-size: 11px; padding: 1px 6px; border-radius: 5px; }
-  .len { position: absolute; bottom: 6px; right: 6px; background: var(--teal); color: var(--ink); font-size: 11px; font-weight: 700; padding: 1px 7px; border-radius: 99px; }
-  .num { position: absolute; top: 6px; left: 6px; background: var(--ink); color: #fff; font-size: 11px; font-weight: 700; padding: 1px 7px; border-radius: 99px; }
-  .bgw { background: linear-gradient(160deg,#efe2d6,#d9c6b5); }
+  .fr .shot { font-size: 40px; }
+  .fr .lbl { font-size: 10px; font-weight: 600; color: #6a5a52; text-transform: uppercase; letter-spacing: .07em; margin-top: 3px; text-align: center; padding: 0 6px; }
+  .ov { position: absolute; left: 4%; right: 4%; text-align: center; color: #fff; font-weight: 600; line-height: 1.2; }
+  .top { top: 12%; } .cap { top: 84%; font-size: 9.5px; font-weight: 400; text-shadow: 0 1px 2px #0007; }
+  .p { background: var(--pink); border: 1.5px solid #fff; border-radius: 5px; padding: 0 5px 2px; font-size: 12.5px; display: inline-block; }
+  .ps { font-size: 9.5px; display: block; margin-top: 2px; text-shadow: 0 1px 2px #0006; }
+  .wm { position: absolute; top: 3.5%; left: 5%; text-align: center; color: #fff; font-size: 5.5px; font-weight: 600; line-height: 1.15; }
+  .wm b { display: block; background: var(--pink); border-radius: 3px; font-size: 8px; padding: 0 3px 1px; }
+  .dot { display: inline-flex; align-items: center; gap: 4px; font-size: 13px; font-weight: 700; color: #fff; text-shadow: 0 1px 2px #0006; }
+  .dot::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--pink); }
+  .title { position: absolute; top: 58%; left: 0; right: 0; text-align: center; color: #fff; }
+  .title .a { font-size: 13px; font-weight: 600; }
+  .title .b { display: inline-block; background: var(--pink); border-radius: 8px; font-size: 26px; font-weight: 600; padding: 0 8px 3px; line-height: 1.1; }
+  .title .c { font-size: 10px; font-weight: 600; }
+  .title .d { font-size: 7.5px; margin-top: 4px; }
+  .tc { position: absolute; bottom: 5px; left: 5px; background: #000a; color: #fff; font-size: 10px; padding: 1px 5px; border-radius: 5px; }
+  .len { position: absolute; bottom: 5px; right: 5px; background: var(--teal); color: var(--ink); font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 99px; }
+  .num { position: absolute; top: 5px; right: 5px; background: var(--ink); color: #fff; font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 99px; }
+  .bgw { background: linear-gradient(160deg,#efe2d6,#d4c0ae); }
   .bgm { background: linear-gradient(160deg,#e6eef0,#bfe9ef); }
-  .bgp { background: linear-gradient(160deg,#fbe3ea,#f2c9d6); }
+  .bgp { background: linear-gradient(160deg,#f3e2e2,#dcc3bd); }
   .bgd { background: linear-gradient(160deg,#d8cfc8,#a99a8e); }
-  .sc .tx { padding: 9px 11px 13px; font-size: 12px; line-height: 1.42; }
-  .sc b.t { display: block; font-size: 13.5px; margin-bottom: 3px; }
-  .k { color: #9a8a82; font-size: 10px; text-transform: uppercase; letter-spacing: .1em; margin-top: 6px; display: block; }
+  .sc .tx { padding: 8px 10px 12px; font-size: 11.5px; line-height: 1.4; }
+  .sc b.t { display: block; font-size: 13px; margin-bottom: 3px; }
+  .k { color: #9a8a82; font-size: 9.5px; text-transform: uppercase; letter-spacing: .1em; margin-top: 5px; display: block; }
   .vo { font-style: italic; }
-  .ref { display: inline-block; background: #e6f8fa; color: #2a7480; font-size: 10px; border-radius: 4px; padding: 0 5px; margin-top: 5px; }
-  table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 14px; overflow: hidden; font-size: 14px; }
-  th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid #f0e8e2; vertical-align: top; }
+  .ref { display: inline-block; background: #e6f8fa; color: #2a7480; font-size: 9.5px; border-radius: 4px; padding: 0 5px; margin-top: 4px; }
+  .you { display: inline-block; background: #fde6ee; color: #b0456c; font-size: 9.5px; border-radius: 4px; padding: 0 5px; margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; background: #fff; font-size: 14px; }
+  th, td { text-align: left; padding: 7px 12px; border-bottom: 1px solid #f0e8e2; vertical-align: top; }
   th { background: #f3ebe5; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: #7a6a62; }
   td.tm { white-space: nowrap; font-weight: 600; }
-  .bar { display: flex; height: 34px; border-radius: 8px; overflow: hidden; font-size: 11px; font-weight: 600; color: #fff; margin-top: 6px; }
+  .bar { display: flex; height: 34px; border-radius: 8px; overflow: hidden; font-size: 10.5px; font-weight: 600; color: #fff; margin-top: 6px; }
   .bar div { display: flex; align-items: center; justify-content: center; border-right: 2px solid var(--cream); }
 </style>
 </head>
 <body>
-  <h1>Sara's <span class="pill" style="font-size:38px">glow up</span> series — <span style="color:#2aa6b8">scalp edition</span></h1>
-  <p class="sub">Brand sheet + shooting storyboard · v2 for approval · product: VT PDRN Reedle Shot Brush Hair Serum · target ~29.5s · 9:16 · nothing filmed or exported yet</p>
+  <h1>Sara's <span class="pill" style="font-size:38px;border-radius:12px">glow up</span> series — scalp care episode</h1>
+  <p class="sub">Brand sheet + shooting storyboard · <b>v3</b>, now in your usual series format from De-puff ep. 37 · product: VT PDRN Reedle Shot Brush Hair Serum · ~34s · nothing filmed or exported yet</p>
 
-  <h2>1 · What the 4 reference videos do <small>· all feature the same VT hair serum · used as inspiration only, not copied</small></h2>
-  <div class="grid refs">
-    <div class="rf"><img src="refs/k1.jpg"><div class="tx"><b class="t">A · kondina_beauty (Russian)</b>
-      <div class="kv"><span>length · cuts</span><span>16s · 9</span></div><div class="kv"><span>avg shot</span><span>1.8s</span></div><div class="kv"><span>sound</span><span>song, no voice</span></div>
-      Starts with the result. Fake-out hook: "because of this? → no, because of THIS!" Pushes the product into the lens, then <b>a hand swipe changes her outfit</b> for the after. Only 3 captions. Thin white sans-serif, no box.</div></div>
-    <div class="rf"><img src="refs/k2.jpg"><div class="tx"><b class="t">B · talking review (English)</b>
-      <div class="kv"><span>length · cuts</span><span>57s · 21</span></div><div class="kv"><span>avg shot</span><span>2.7s</span></div><div class="kv"><span>sound</span><span>voiceover</span></div>
-      Talks to camera the whole time. <b>Captions follow her words</b>, 3–5 words each, changing about every 1s. Bold title with a black outline in the first 2s. Explains the ingredients and how to use both products together. "stay tuned" CTA.</div></div>
-    <div class="rf"><img src="refs/k3.jpg"><div class="tx"><b class="t">C · 7-day diary (English)</b>
-      <div class="kv"><span>length · cuts</span><span>16s · 16</span></div><div class="kv"><span>avg shot</span><span>1.0s</span></div><div class="kv"><span>sound</span><span>song + text</span></div>
-      Problem hook over a scalp macro. <b>Day 1 / Day 4 / Day 7 labels</b> each pair a fact with the day. Before/after of the hairline. Ends on a comb-through of long hair. White text with a thin shadow, 2–3 lines.</div></div>
-    <div class="rf"><img src="refs/k4.jpg"><div class="tx"><b class="t">D · cozy ASMR demo (English)</b>
-      <div class="kv"><span>length · cuts</span><span>24s · 20</span></div><div class="kv"><span>avg shot</span><span>1.2s</span></div><div class="kv"><span>sound</span><span>song + text</span></div>
-      <b>Satisfying product close-ups</b>: the OFF→ON twist, the brush head, <b>serum dripping through the bristles</b>. Bathrobe, warm lamp light. Lowercase 2-line captions with an emoji at the end. "don't sleep on this" CTA.</div></div>
-  </div>
-
-  <h2>2 · Brand sheet <small>· what the references share + your glow up look</small></h2>
-  <div class="grid" style="grid-template-columns:1.1fr 1fr 1.3fr">
-    <div class="card"><h3>Colors</h3>
-      <div class="sw">
-        <div><i style="background:#58E0F0"></i><b>VT Teal</b><br>#58E0F0<br>product color: progress bar, small accents <small>(all refs)</small></div>
-        <div><i style="background:#FCB4CC"></i><b>Glow Pink</b><br>#FCB4CC<br>your titles + step pills</div>
-        <div><i style="background:#D6968C"></i><b>Dusty Rose</b><br>#D6968C<br>your caption box</div>
-        <div><i style="background:#F6F09C"></i><b>Butter</b><br>#F6F09C<br>ingredient stats</div>
-        <div><i style="background:#D9DDE2"></i><b>Silver</b><br>#D9DDE2<br>the tube: keep it in frame</div>
-        <div><i style="background:#EAD9C8"></i><b>Warm Neutral</b><br>#EAD9C8<br>background: bathrobe, towel, wall <small>(Ref D)</small></div>
+  <h2>1 · Your series format <small>· taken from your De-puff ep. 37 · this episode follows the same pattern</small></h2>
+  <div class="grid series">
+    <figure><img src="series/f0.0.jpg"><figcaption><b>Title card</b> flashes at 0s and again at the end of the "welcome back" intro, over your pointing-down pose</figcaption></figure>
+    <figure><img src="series/f5.0.jpg"><figcaption><b>Series logo</b> stacked in the top-left from the product shot on. <b>Product pill</b> with the product name in white under it</figcaption></figure>
+    <figure><img src="series/f10.0.jpg"><figcaption><b>Numbered step pill</b> ("1. …"), <b>● dot labels</b>, and a small white caption at the bottom</figcaption></figure>
+    <figure><img src="series/f30.5.jpg"><figcaption><b>"little tip"</b> pill with a 2-line white note under it</figcaption></figure>
+    <div class="card"><h3>Your look: keep it exactly like this</h3>
+      <div class="sw" style="margin-bottom:12px">
+        <div><i style="background:#F7B3C9"></i><b>Glow Pink</b><br>#F7B3C9<br>all pills, dots, title card</div>
+        <div><i style="background:#FFFFFF"></i><b>White</b><br>pill text + outline, captions</div>
+        <div><i style="background:#58E0F0"></i><b>VT Teal</b><br>#58E0F0<br>the product: let it pop, no extra graphics</div>
+        <div><i style="background:#EAD9C8"></i><b>Warm neutral</b><br>your bathroom + robe</div>
       </div>
-      <p style="font-size:12.5px;margin-top:10px;color:#7a6a62">All 4 references film against plain, neutral backgrounds (grey, beige, white), so the teal product pops. Wear white, cream or grey. Avoid busy patterns behind your head.</p></div>
-    <div class="card"><h3>Fonts + caption style</h3>
-      <p style="margin-bottom:8px"><span style="font-family:Pretendard;font-weight:700;font-size:30px;color:#fff;-webkit-text-stroke:1.5px #2B2326;paint-order:stroke fill;background:#cfc6c0;padding:2px 10px">skincare for your scalp</span></p>
-      <p style="font-size:13px;margin-bottom:10px"><b>References:</b> TikTok's built-in sans-serif, white, either a thin shadow (A, C, D) or a black outline for the opening title (B). No box. Lowercase. 1–2 lines. Emoji at the end.</p>
-      <p style="margin-bottom:6px"><span class="pill" style="font-size:30px">02 · brush in</span> <span style="background:#D6968C;color:#fff;font-family:Pretendard;font-weight:600;font-size:18px;padding:3px 9px">the way your hair grows</span></p>
-      <p style="font-size:13px"><b>Yours:</b> keep your glow up look (Jost pills, Pretendard captions on dusty rose) so the series stays recognisable. Borrow two things: the <b>outlined white opening title</b> (Ref B) and <b>lowercase + emoji endings</b> (Ref D).</p></div>
-    <div class="card"><h3>Captions · Pacing · Techniques</h3>
-      <ul>
-        <li><b>Pacing:</b> the references average <b>1.0–2.7s per shot</b>. The three short ones (16–24s) cut every 1–1.8s. Your plan: 29.5s, 16 clips, <b>about 1.8s each</b>, with text changing every 1–1.5s so it feels faster.</li>
-        <li><b>Captions:</b> every 1–1.5s, 2–6 words. Talking videos follow the voice word for word (B). Music videos use 1 caption per idea (A, C, D).</li>
-        <li><b>Hook in 2s:</b> show the result first (A), or a relatable problem (C).</li>
-        <li><b>Transitions:</b> push the product into the lens, and a <b>hand swipe for the before→after</b> (A).</li>
-        <li><b>Satisfying close-ups:</b> the ON twist, serum through the bristles, a close-up on the parting (C, D).</li>
-        <li><b>Product explained</b> in 2–3 short facts (B, C, D).</li>
-        <li><b>Ending:</b> a soft "don't sleep on this" / "stay tuned" (B, D). Yours: <b>save + annyeong</b>.</li>
-        <li><b>Claims:</b> refs B and C promise hair growth and target women "balding right now". Skip that: say "healthy-looking scalp" and "fresh roots" instead.</li>
+      <ul style="font-size:13.5px">
+        <li><b>Font:</b> rounded geometric, Futura-style (Jost is the close match), white.</li>
+        <li><b>Pills:</b> pink with a thin white outline, white text, centred at the top. Hook = a question, steps = "1. …", "2. …".</li>
+        <li><b>Captions:</b> small, white, sentence case, <b>no box</b>, near the bottom. One phrase at a time, synced to your voice.</li>
+        <li><b>Structure:</b> title flash → hook → result tease → "Welcome back to my glow up series" + title card → product → numbered steps → little tip → result → "Save this and follow for the next episode" → annyeong 👋</li>
       </ul></div>
   </div>
 
-  <h2>3 · Shooting storyboard <small>· your own concept: "picky about my scalp care" · seconds = how long the clip runs in the final video · film each shot 3–5s longer</small></h2>
+  <h2>2 · What the 4 reference videos add <small>· all feature the same VT hair serum · used as inspiration, not copied</small></h2>
+  <div class="grid refs">
+    <div class="rf"><img src="refs/k1.jpg"><div class="tx"><b class="t">A · kondina_beauty (RU)</b>
+      <div class="kv"><span>length · avg shot</span><span>16s · 1.8s</span></div>
+      Starts with the result. <b>Pushes the product into the lens</b>. <b>A hand swipe changes her outfit</b> for the after. Captions: 🇰🇷 "Korean hair care is living in 2035" / "because of this?" / "no, because of THIS!"</div></div>
+    <div class="rf"><img src="refs/k2.jpg"><div class="tx"><b class="t">B · talking review</b>
+      <div class="kv"><span>length · avg shot</span><span>57s · 2.7s</span></div>
+      Voiceover with <b>captions following her words about every 1s</b>. Explains the ingredients and how to use it.</div></div>
+    <div class="rf"><img src="refs/k3.jpg"><div class="tx"><b class="t">C · 7-day diary</b>
+      <div class="kv"><span>length · avg shot</span><span>16s · 1.0s</span></div>
+      Fastest cuts. <b>Close-up on the parting / scalp</b>. Ends on a fresh comb-through. (Its growth and "balding" claims are skipped here.)</div></div>
+    <div class="rf"><img src="refs/k4.jpg"><div class="tx"><b class="t">D · cozy ASMR demo</b>
+      <div class="kv"><span>length · avg shot</span><span>24s · 1.2s</span></div>
+      <b>Satisfying close-ups</b>: the OFF→ON twist, <b>serum through the bristles</b>. Robe + warm light.</div></div>
+  </div>
+  <p class="sub" style="font-size:14px;margin-top:8px">Borrowed: push-to-lens (A), hand-swipe to the after (A), captions synced every 1–1.5s (B), scalp close-up (C), twist + drip close-ups (D). <b>Pacing target:</b> refs run 1.0–2.7s per shot. This plan averages 1.8s, with text changing every 1–1.5s.</p>
+
+  <h2>3 · Shooting storyboard <small>· seconds = clip length in the final video · film each shot 3–5s longer · <span class="you" style="font-size:12px">pink tag</span> = your series signature · <span class="ref" style="font-size:12px">teal tag</span> = from the references</small></h2>
   <div class="grid board">
-    <div class="sc"><div class="fr bgp"><span class="num">1</span><div class="shot">💁🏻‍♀️</div><div class="lbl">medium · face + hair</div>
-      <div class="ov top"><span style="font-weight:700;font-size:15px;-webkit-text-stroke:1px #2B2326;paint-order:stroke fill">i'm honestly so picky<br>about my scalp care 🫧</span></div><span class="tc">0:00–0:02.0</span><span class="len">2.0s</span></div>
-      <div class="tx"><b class="t">Hook: result first</b>Finished, glossy hair. Run your fingers through it and look at the camera.<span class="k">Animation</span>outlined title types on<span class="k">VO</span><span class="vo">"Annyeong! I'm honestly so picky about my scalp care…"</span><br><span class="ref">A result-first · B title</span></div></div>
+    <div class="sc"><div class="fr bgp"><span class="num">1</span><div class="shot">👇🏻👇🏻</div><div class="lbl">medium · pointing down</div>
+      <div class="title"><div class="a">Sara's</div><div class="b">glow up</div><div class="c">series</div><div class="d">ep. 4<br>Scalp care with a built-in brush</div></div>
+      <span class="tc">0:00–0:00.5</span><span class="len">0.5s</span></div>
+      <div class="tx"><b class="t">Title card flash</b>Your pointing-down pose.<span class="k">Animation</span>title card on, cut<span class="k">VO</span>—<br><span class="you">series opener</span></div></div>
 
-    <div class="sc"><div class="fr bgd"><span class="num">2</span><div class="shot">🔍</div><div class="lbl">macro · scalp check</div>
-      <div class="ov low"><span class="cb">so when i find one i love…</span></div><span class="tc">0:02.0–0:03.5</span><span class="len">1.5s</span></div>
-      <div class="tx"><b class="t">Scalp check</b>Hard cut to a close-up: part your hair with 2 fingers to show your scalp, phone 10cm away.<span class="k">Animation</span>quick 5% punch-in<span class="k">VO</span><span class="vo">"…so when I find one I love…"</span><br><span class="ref">C scalp macro</span></div></div>
+    <div class="sc"><div class="fr bgp"><span class="num">2</span><div class="shot">💁🏻‍♀️</div><div class="lbl">medium · fingers in hair</div>
+      <div class="ov top"><span class="p">scalp care?</span></div><div class="ov cap">I'm honestly so picky about my scalp care</div>
+      <span class="tc">0:00.5–0:02.5</span><span class="len">2.0s</span></div>
+      <div class="tx"><b class="t">Hook</b>Clean, glossy hair. Run your fingers through it and look at the camera.<span class="k">Animation</span>the pill pops in<span class="k">VO</span><span class="vo">"Annyeong! I'm honestly so picky about my scalp care…"</span><br><span class="you">"puffy face?" style</span></div></div>
 
-    <div class="sc"><div class="fr bgw"><span class="num">3</span><div class="shot">🧴➡️📱</div><div class="lbl">push to lens</div>
-      <div class="ov low"><span class="cb">i have to share it 🩵</span></div><span class="tc">0:03.5–0:05.0</span><span class="len">1.5s</span></div>
-      <div class="tx"><b class="t">Product push transition</b>Push the tube toward the lens until it covers the screen. The next shot starts from the tube moving away.<span class="k">Animation</span>the cut is hidden inside the push<span class="k">VO</span><span class="vo">"…I have to share it."</span><br><span class="ref">A push-in</span></div></div>
+    <div class="sc"><div class="fr bgd"><span class="num">3</span><div class="shot">🔍</div><div class="lbl">macro · scalp check</div>
+      <div class="ov top"><span class="p">scalp care?</span></div><div class="ov cap">so when I find one I love…</div>
+      <span class="tc">0:02.5–0:04.0</span><span class="len">1.5s</span></div>
+      <div class="tx"><b class="t">Scalp check</b>Part your hair with 2 fingers, phone 10cm away.<span class="k">Animation</span>5% punch-in<span class="k">VO</span><span class="vo">"…so when I find one I love…"</span><br><span class="ref">C scalp close-up</span></div></div>
 
-    <div class="sc"><div class="fr bgw"><span class="num">4</span><div class="shot">🙋🏻‍♀️🧴</div><div class="lbl">medium · tube by face</div>
-      <div class="ov top"><span class="tag">VT PDRN Reedle Shot Brush Hair Serum</span><br><span class="p" style="margin-top:4px">glow up · scalp edition</span></div><span class="tc">0:05.0–0:07.5</span><span class="len">2.5s</span></div>
-      <div class="tx"><b class="t">Product hero</b>Hold the tube beside your cheek, label to camera, soft smile.<span class="k">Animation</span>The tag slides down and the pink series pill pops in.<span class="k">VO</span><span class="vo">"VT's PDRN Reedle Shot brush hair serum."</span></div></div>
+    <div class="sc"><div class="fr bgw"><span class="num">4</span><div class="shot">🧴➡️📱</div><div class="lbl">push to lens</div>
+      <div class="ov cap">I have to share it 🩵</div>
+      <span class="tc">0:04.0–0:05.5</span><span class="len">1.5s</span></div>
+      <div class="tx"><b class="t">Push transition</b>Push the tube into the lens until it covers the screen.<span class="k">Animation</span>cut hidden in the push<span class="k">VO</span><span class="vo">"…I have to share it."</span><br><span class="ref">A push-in</span></div></div>
 
-    <div class="sc"><div class="fr bgm"><span class="num">5</span><div class="shot">🔄</div><div class="lbl">macro · twist head</div>
-      <div class="ov low"><span class="cb">twist to ON</span></div><span class="tc">0:07.5–0:09.5</span><span class="len">2.0s</span></div>
-      <div class="tx"><b class="t">ASMR: twist ON</b>Brush head filling the frame. Twist slowly from OFF to ON. Record the click sound.<span class="k">Animation</span>↻ icon spins once<span class="k">VO</span><span class="vo">"Twist it on…"</span><br><span class="ref">D twist macro</span></div></div>
+    <div class="sc"><div class="fr bgp"><span class="num">5</span><div class="shot">👋🏻➡️👇🏻</div><div class="lbl">medium · wave, then point</div>
+      <div class="title" style="top:60%;opacity:.85"><div class="a">Sara's</div><div class="b" style="font-size:20px">glow up</div><div class="c">series</div></div><div class="ov cap">Welcome back to my glow up series</div>
+      <span class="tc">0:05.5–0:08.0</span><span class="len">2.5s</span></div>
+      <div class="tx"><b class="t">Welcome back</b>Wave with both hands, then point down. The title card fades in for the last 0.8s.<span class="k">Animation</span>title card fades in<span class="k">VO</span><span class="vo">"Welcome back to my glow up series."</span><br><span class="you">your intro</span></div></div>
 
-    <div class="sc"><div class="fr bgm"><span class="num">6</span><div class="shot">💧</div><div class="lbl">macro · bristles</div>
-      <div class="ov low"><span class="cb">serum + scalp brush in one</span></div><span class="tc">0:09.5–0:11.5</span><span class="len">2.0s</span></div>
-      <div class="tx"><b class="t">Serum through the brush</b>Bristles pointing at the lens. Squeeze gently until the serum beads up. Film at 60fps and slow it down.<span class="k">Animation</span>slight slow-mo, 0.7×<span class="k">VO</span><span class="vo">"…and the serum comes out right through the brush."</span><br><span class="ref">D drip shot</span></div></div>
+    <div class="sc"><div class="fr bgw"><span class="num">6</span><div class="wm">Sara's<b>glow up</b>series</div><div class="shot">🙋🏻‍♀️🧴</div><div class="lbl">medium · tube by face</div>
+      <div class="ov top"><span class="p">VT Cosmetics</span><span class="ps">PDRN Reedle Shot Brush Hair Serum</span></div><div class="ov cap">This is VT's PDRN Reedle Shot brush hair serum</div>
+      <span class="tc">0:08.0–0:10.5</span><span class="len">2.5s</span></div>
+      <div class="tx"><b class="t">Product</b>Tube beside your cheek, label to camera.<span class="k">Animation</span>The pill pops in and the series logo appears top-left (it stays from here on).<span class="k">VO</span><span class="vo">"This is VT's PDRN Reedle Shot brush hair serum."</span><br><span class="you">product pill</span></div></div>
 
-    <div class="sc"><div class="fr bgw"><span class="num">7</span><div class="shot">🧪</div><div class="lbl">close · tube back label</div>
-      <div class="ov top" style="top:30%"><span class="st">PHYTO PDRN</span><br><span class="st">caffeine</span><br><span class="st">cica reedles</span></div><span class="tc">0:11.5–0:14.0</span><span class="len">2.5s</span></div>
-      <div class="tx"><b class="t">What's inside</b>Turn the tube slowly in your hand.<span class="k">Animation</span>3 butter stat boxes pop in one at a time, 0.4s apart<span class="k">VO</span><span class="vo">"PDRN, caffeine and tiny cica reedles, made for your scalp."</span><br><span class="ref">B · C ingredient facts</span></div></div>
+    <div class="sc"><div class="fr bgm"><span class="num">7</span><div class="wm">Sara's<b>glow up</b>series</div><div class="shot">🔄</div><div class="lbl">macro · twist head</div>
+      <div class="ov cap">Twist it on…</div>
+      <span class="tc">0:10.5–0:12.5</span><span class="len">2.0s</span></div>
+      <div class="tx"><b class="t">Twist ON</b>The brush head fills the frame. Twist slowly from OFF to ON. Keep the click sound.<span class="k">Animation</span>—<span class="k">VO</span><span class="vo">"Twist it on…"</span><br><span class="ref">D twist close-up</span></div></div>
 
-    <div class="sc"><div class="fr bgd"><span class="num">8</span><div class="shot">🧖🏻‍♀️</div><div class="lbl">medium · towel-dried hair</div>
-      <div class="ov top"><span class="p">01 · section</span></div><div class="ov low"><span class="cb">towel-dried hair, part it</span></div><span class="tc">0:14.0–0:16.0</span><span class="len">2.0s</span></div>
-      <div class="tx"><b class="t">Step 1: section</b>Bathrobe, towel-dried hair. Make a parting with a comb tail.<span class="k">Animation</span>The step pill pops in. The teal progress bar fills 1/3.<span class="k">VO</span><span class="vo">"Towel-dry, then section your hair."</span></div></div>
+    <div class="sc"><div class="fr bgm"><span class="num">8</span><div class="wm">Sara's<b>glow up</b>series</div><div class="shot">💧</div><div class="lbl">macro · bristles</div>
+      <div class="ov cap">and the serum comes out right through the brush</div>
+      <span class="tc">0:12.5–0:14.5</span><span class="len">2.0s</span></div>
+      <div class="tx"><b class="t">Serum through the brush</b>Bristles toward the lens. Squeeze gently until the serum beads up. Film at 60fps.<span class="k">Animation</span>0.7× slow-mo<span class="k">VO</span><span class="vo">"…and the serum comes out right through the brush."</span><br><span class="ref">D drip shot</span></div></div>
 
-    <div class="sc"><div class="fr bgd"><span class="num">9</span><div class="shot">🪮</div><div class="lbl">2 clips · wide + macro</div>
-      <div class="ov top"><span class="p">02 · brush in</span></div><div class="ov low"><span class="cb">the way your hair grows ↗</span></div><span class="tc">0:16.0–0:19.5</span><span class="len">3.5s</span></div>
-      <div class="tx"><b class="t">Step 2: brush along the parts</b><b>Clip 9a, 1.5s:</b> wide shot, brushing along a parting.<br><b>Clip 9b, 2.0s:</b> macro on the hairline as the brush passes.<span class="k">Animation</span>progress 2/3<span class="k">VO</span><span class="vo">"Squeeze and brush it along each part, the way your hair grows."</span><br><span class="ref">C · D application</span></div></div>
+    <div class="sc"><div class="fr bgw"><span class="num">9</span><div class="wm">Sara's<b>glow up</b>series</div><div class="shot">🧪</div><div class="lbl">close · turning the tube</div>
+      <div class="ov" style="top:30%;text-align:left;left:14%"><span class="dot">PHYTO PDRN</span><br><span class="dot">caffeine</span><br><span class="dot">cica reedles</span></div><div class="ov cap">made for your scalp</div>
+      <span class="tc">0:14.5–0:17.0</span><span class="len">2.5s</span></div>
+      <div class="tx"><b class="t">What's inside</b>Turn the tube slowly in your hand.<span class="k">Animation</span>3 ● dot labels pop in, 0.4s apart<span class="k">VO</span><span class="vo">"PDRN, caffeine and tiny cica reedles, made for your scalp."</span><br><span class="you">your ● labels</span></div></div>
 
-    <div class="sc"><div class="fr bgp"><span class="num">10</span><div class="shot">😌</div><div class="lbl">close · fingertip massage</div>
-      <div class="ov top"><span class="p">03 · massage</span></div><div class="ov low"><span class="cb">cool + a little tingly 🫧</span></div><span class="tc">0:19.5–0:22.0</span><span class="len">2.5s</span></div>
-      <div class="tx"><b class="t">Step 3: massage</b>Fingertips massaging in circles, eyes closed, a real relaxed reaction.<span class="k">Animation</span>progress 3/3<span class="k">VO</span><span class="vo">"It feels cool and a little tingly. So relaxing."</span></div></div>
+    <div class="sc"><div class="fr bgd"><span class="num">10</span><div class="wm">Sara's<b>glow up</b>series</div><div class="shot">🧖🏻‍♀️</div><div class="lbl">medium · towel-dried hair</div>
+      <div class="ov top"><span class="p">1. Section your hair</span></div><div class="ov cap">Towel-dry, then section your hair</div>
+      <span class="tc">0:17.0–0:19.0</span><span class="len">2.0s</span></div>
+      <div class="tx"><b class="t">Step 1</b>Robe, towel-dried hair. Make a parting with a comb tail.<span class="k">Animation</span>step pill pops in<span class="k">VO</span><span class="vo">"Towel-dry, then section your hair."</span><br><span class="you">numbered steps</span></div></div>
 
-    <div class="sc"><div class="fr bgw"><span class="num">11</span><div class="shot">✋💨</div><div class="lbl">hand swipe across lens</div><span class="tc">0:22.0–0:22.5</span><span class="len">0.5s</span></div>
-      <div class="tx"><b class="t">Swipe transition</b>Still in the robe, swipe your hand across the lens. Change into your outfit with dry hair, then film the same swipe ending.<span class="k">Animation</span>cut on the blur<span class="k">VO</span>(pause)<br><span class="ref">A outfit swipe</span></div></div>
+    <div class="sc"><div class="fr bgd"><span class="num">11</span><div class="wm">Sara's<b>glow up</b>series</div><div class="shot">🪮</div><div class="lbl">2 clips · wide + macro</div>
+      <div class="ov top"><span class="p">2. Brush along each part</span></div><div class="ov cap">the way your hair grows</div>
+      <span class="tc">0:19.0–0:22.5</span><span class="len">3.5s</span></div>
+      <div class="tx"><b class="t">Step 2</b><b>11a, 1.5s:</b> wide, brushing along a part.<br><b>11b, 2.0s:</b> close-up of the hairline as the brush passes.<span class="k">VO</span><span class="vo">"Squeeze and brush it along each part, the way your hair grows."</span><br><span class="ref">C · D application</span></div></div>
 
-    <div class="sc"><div class="fr bgp"><span class="num">12</span><div class="shot">💇🏻‍♀️✨</div><div class="lbl">2 clips · flip + roots</div>
-      <div class="ov low"><span class="cb">fresh roots, not greasy ✨</span></div><span class="tc">0:22.5–0:26.0</span><span class="len">3.5s</span></div>
-      <div class="tx"><b class="t">The after</b><b>Clip 12a, 1.5s:</b> hair flip in slow motion (60fps).<br><b>Clip 12b, 2.0s:</b> fingers lifting your roots at the parting.<span class="k">Animation</span>soft glow flash on the cut<span class="k">VO</span><span class="vo">"And it's not greasy at all. Fresh roots, happy scalp."</span><br><span class="ref">C comb-through</span></div></div>
+    <div class="sc"><div class="fr bgp"><span class="num">12</span><div class="wm">Sara's<b>glow up</b>series</div><div class="shot">😌</div><div class="lbl">close · fingertip massage</div>
+      <div class="ov top"><span class="p">3. Massage your scalp</span></div><div class="ov cap">It feels cool and a little tingly</div>
+      <span class="tc">0:22.5–0:25.0</span><span class="len">2.5s</span></div>
+      <div class="tx"><b class="t">Step 3</b>Fingertip circles, eyes closed, a real reaction.<span class="k">VO</span><span class="vo">"It feels cool and a little tingly. So relaxing."</span></div></div>
 
-    <div class="sc"><div class="fr bgp"><span class="num">13</span><div class="shot">👋🏻🧴</div><div class="lbl">medium · wave</div>
-      <div class="ov low" style="top:58%"><span class="p">save this for wash day 💗</span><br><span class="cb" style="margin-top:4px">annyeong! 안녕</span></div><span class="tc">0:26.0–0:28.5</span><span class="len">2.5s</span></div>
-      <div class="tx"><b class="t">Outro</b>Tube by your face, then a wave goodbye.<span class="k">Animation</span>The CTA bounces in, then the "annyeong" caption.<span class="k">VO</span><span class="vo">"Save this for wash day. Annyeong!"</span><br><span class="ref">D "don't sleep on this"</span></div></div>
+    <div class="sc"><div class="fr bgw"><span class="num">13</span><div class="wm">Sara's<b>glow up</b>series</div><div class="shot">💡</div><div class="lbl">medium · dry hair, brushing roots</div>
+      <div class="ov top"><span class="p">little tip</span><span class="ps">Works on dry hair too,<br>great between washes</span></div><div class="ov cap">I also use it on dry hair between washes</div>
+      <span class="tc">0:25.0–0:27.0</span><span class="len">2.0s</span></div>
+      <div class="tx"><b class="t">Little tip</b>Brushing your roots with dry hair. Film this one before you wash.<span class="k">VO</span><span class="vo">"Little tip: I also use it on dry hair, between washes."</span><br><span class="you">your "little tip"</span></div></div>
 
-    <div class="sc"><div class="fr" style="background:#EAC6CC"><span class="num">14</span><div style="color:#fff;font-weight:600;font-size:13px">Sara's</div><div class="p" style="background:#fff;color:#E8789F;font-size:24px">glow up</div><div style="color:#fff;font-size:11px;margin-top:3px">scalp edition</div><span class="tc">0:28.5–0:29.5</span><span class="len">1.0s</span></div>
-      <div class="tx"><b class="t">End card</b>Petal pink with the series logo<span class="k">Animation</span>fade through<span class="k">VO</span>(music only)</div></div>
+    <div class="sc"><div class="fr bgw"><span class="num">14</span><div class="shot">✋💨</div><div class="lbl">hand swipe across lens</div>
+      <span class="tc">0:27.0–0:27.5</span><span class="len">0.5s</span></div>
+      <div class="tx"><b class="t">Swipe transition</b>Swipe in the robe, then change into your outfit with dry hair and film the swipe ending.<span class="k">VO</span>(pause)<br><span class="ref">A outfit swipe</span></div></div>
 
-    <div class="sc" style="background:#fff7e0"><div class="tx" style="font-size:12.5px"><b class="t">🎥 Filming checklist</b>
-      <ul style="font-size:12px;padding-left:15px">
-        <li>Back camera, 4K, 30fps. Use 60fps for shots 6 and 12a.</li>
-        <li>Face a window, or a warm lamp in front of you. No overhead-only light.</li>
-        <li>Plain background. White or cream robe + towel.</li>
-        <li>Phone on a tripod at eye level for shots 1, 4, 8, 10, 13.</li>
-        <li>Macros (2, 5, 6, 9b): tap to focus, phone 10–15cm away.</li>
-        <li>Shot 11: film the swipe twice, once in the robe and once in your outfit.</li>
-        <li>Wipe the teal brush clean between takes.</li>
-        <li>Record the voiceover separately in a quiet room.</li>
-      </ul></div></div>
+    <div class="sc"><div class="fr bgp"><span class="num">15</span><div class="wm">Sara's<b>glow up</b>series</div><div class="shot">💇🏻‍♀️✨</div><div class="lbl">2 clips · flip + roots</div>
+      <div class="ov cap">Not greasy at all. Fresh roots, happy scalp</div>
+      <span class="tc">0:27.5–0:31.0</span><span class="len">3.5s</span></div>
+      <div class="tx"><b class="t">The result</b><b>15a, 1.5s:</b> hair flip, 60fps slow-mo.<br><b>15b, 2.0s:</b> fingers lifting your roots at the parting.<span class="k">VO</span><span class="vo">"And it's not greasy at all. Fresh roots, happy scalp."</span><br><span class="ref">C comb-through</span></div></div>
+
+    <div class="sc"><div class="fr bgp"><span class="num">16</span><div class="wm">Sara's<b>glow up</b>series</div><div class="shot">🙂🧴</div><div class="lbl">close · face + tube</div>
+      <div class="ov cap">Save this and follow for the next episode</div>
+      <span class="tc">0:31.0–0:33.0</span><span class="len">2.0s</span></div>
+      <div class="tx"><b class="t">Save + follow</b>Close to the camera with the tube, soft smile.<span class="k">VO</span><span class="vo">"Save this and follow for the next episode."</span><br><span class="you">your usual line</span></div></div>
+
+    <div class="sc"><div class="fr bgp"><span class="num">17</span><div class="wm">Sara's<b>glow up</b>series</div><div class="shot">👋🏻👋🏻</div><div class="lbl">medium · both-hands wave</div>
+      <div class="ov cap">Annyeong</div>
+      <span class="tc">0:33.0–0:34.0</span><span class="len">1.0s</span></div>
+      <div class="tx"><b class="t">Annyeong</b>Your both-hands wave.<span class="k">VO</span><span class="vo">"Annyeong!"</span><br><span class="you">your sign-off</span></div></div>
+
+    <div class="sc" style="background:#fff7e0;grid-column:span 1"><div class="tx" style="font-size:11.5px"><b class="t">🎥 Filming order for tonight</b>
+      <ol style="padding-left:15px;line-height:1.45">
+        <li><b>Dry hair first:</b> 1, 2, 5, 6, 7, 8, 9, 13, 16, 17</li>
+        <li>Swipe ending in your outfit (14)</li>
+        <li>Hair flip + roots (15a, 15b)</li>
+        <li><b>Wash, towel-dry, robe on:</b> 3, 10, 11a, 11b, 12, swipe start (14)</li>
+        <li>Push to lens (4), either time</li>
+        <li>Voiceover last, in a quiet room</li>
+      </ol>
+      <span class="k">Settings</span>Back camera, 4K, 30fps. 60fps for 8 and 15a. Face the window or a warm lamp. Tap to focus on close-ups.</div></div>
   </div>
 
-  <h2>4 · Voiceover script with timestamps <small>· ≈ 2.6 words/sec, relaxed pace · 15% under the time available, so you can breathe</small></h2>
+  <h2>4 · Voiceover script with timestamps <small>· relaxed pace, about 2.6 words/sec · captions = these exact words, small white at the bottom</small></h2>
   <table>
-    <tr><th>Time</th><th>Clip length</th><th>Voiceover (read this)</th><th>On-screen text</th></tr>
-    <tr><td class="tm">0:00.0–0:02.0</td><td>2.0s</td><td>"Annyeong! I'm honestly so picky about my scalp care…"</td><td>i'm honestly so picky about my scalp care 🫧</td></tr>
-    <tr><td class="tm">0:02.0–0:03.5</td><td>1.5s</td><td>"…so when I find one I love…"</td><td>so when i find one i love…</td></tr>
-    <tr><td class="tm">0:03.5–0:05.0</td><td>1.5s</td><td>"…I have to share it."</td><td>i have to share it 🩵</td></tr>
-    <tr><td class="tm">0:05.0–0:07.5</td><td>2.5s</td><td>"VT's PDRN Reedle Shot brush hair serum."</td><td>tag: VT PDRN Reedle Shot Brush Hair Serum · pill: glow up · scalp edition</td></tr>
-    <tr><td class="tm">0:07.5–0:09.5</td><td>2.0s</td><td>"Twist it on…"</td><td>twist to ON</td></tr>
-    <tr><td class="tm">0:09.5–0:11.5</td><td>2.0s</td><td>"…and the serum comes out right through the brush."</td><td>serum + scalp brush in one</td></tr>
-    <tr><td class="tm">0:11.5–0:14.0</td><td>2.5s</td><td>"PDRN, caffeine and tiny cica reedles, made for your scalp."</td><td>PHYTO PDRN · caffeine · cica reedles</td></tr>
-    <tr><td class="tm">0:14.0–0:16.0</td><td>2.0s</td><td>"Towel-dry, then section your hair."</td><td>01 · section / towel-dried hair, part it</td></tr>
-    <tr><td class="tm">0:16.0–0:19.5</td><td>1.5s + 2.0s</td><td>"Squeeze and brush it along each part, the way your hair grows."</td><td>02 · brush in / the way your hair grows ↗</td></tr>
-    <tr><td class="tm">0:19.5–0:22.0</td><td>2.5s</td><td>"It feels cool and a little tingly. So relaxing."</td><td>03 · massage / cool + a little tingly 🫧</td></tr>
-    <tr><td class="tm">0:22.0–0:22.5</td><td>0.5s</td><td>(pause, swipe)</td><td>—</td></tr>
-    <tr><td class="tm">0:22.5–0:26.0</td><td>1.5s + 2.0s</td><td>"And it's not greasy at all. Fresh roots, happy scalp."</td><td>fresh roots, not greasy ✨</td></tr>
-        <tr><td class="tm">0:26.0–0:28.5</td><td>2.5s</td><td>"Save this for wash day. Annyeong!"</td><td>save this for wash day 💗 / annyeong! 안녕</td></tr>
-    <tr><td class="tm">0:28.5–0:29.5</td><td>1.0s</td><td>(music only)</td><td>end card</td></tr>
+    <tr><th>Time</th><th>Clip</th><th>Voiceover (read this)</th><th>Top pill</th><th>Bottom caption</th></tr>
+    <tr><td class="tm">0:00.0–0:00.5</td><td>0.5s</td><td>—</td><td colspan="2">title card: Sara's · glow up · series · ep. 4 · Scalp care with a built-in brush</td></tr>
+    <tr><td class="tm">0:00.5–0:02.5</td><td>2.0s</td><td>"Annyeong! I'm honestly so picky about my scalp care…"</td><td>scalp care?</td><td>I'm honestly so picky about my scalp care</td></tr>
+    <tr><td class="tm">0:02.5–0:04.0</td><td>1.5s</td><td>"…so when I find one I love…"</td><td>scalp care?</td><td>so when I find one I love…</td></tr>
+    <tr><td class="tm">0:04.0–0:05.5</td><td>1.5s</td><td>"…I have to share it."</td><td>—</td><td>I have to share it 🩵</td></tr>
+    <tr><td class="tm">0:05.5–0:08.0</td><td>2.5s</td><td>"Welcome back to my glow up series."</td><td>(title card, last 0.8s)</td><td>Welcome back to my glow up series</td></tr>
+    <tr><td class="tm">0:08.0–0:10.5</td><td>2.5s</td><td>"This is VT's PDRN Reedle Shot brush hair serum."</td><td>VT Cosmetics / PDRN Reedle Shot Brush Hair Serum</td><td>This is VT's PDRN Reedle Shot brush hair serum</td></tr>
+    <tr><td class="tm">0:10.5–0:12.5</td><td>2.0s</td><td>"Twist it on…"</td><td>—</td><td>Twist it on…</td></tr>
+    <tr><td class="tm">0:12.5–0:14.5</td><td>2.0s</td><td>"…and the serum comes out right through the brush."</td><td>—</td><td>and the serum comes out right through the brush</td></tr>
+    <tr><td class="tm">0:14.5–0:17.0</td><td>2.5s</td><td>"PDRN, caffeine and tiny cica reedles, made for your scalp."</td><td>● PHYTO PDRN ● caffeine ● cica reedles</td><td>made for your scalp</td></tr>
+    <tr><td class="tm">0:17.0–0:19.0</td><td>2.0s</td><td>"Towel-dry, then section your hair."</td><td>1. Section your hair</td><td>Towel-dry, then section your hair</td></tr>
+    <tr><td class="tm">0:19.0–0:22.5</td><td>1.5s + 2.0s</td><td>"Squeeze and brush it along each part, the way your hair grows."</td><td>2. Brush along each part</td><td>the way your hair grows</td></tr>
+    <tr><td class="tm">0:22.5–0:25.0</td><td>2.5s</td><td>"It feels cool and a little tingly. So relaxing."</td><td>3. Massage your scalp</td><td>It feels cool and a little tingly</td></tr>
+    <tr><td class="tm">0:25.0–0:27.0</td><td>2.0s</td><td>"Little tip: I also use it on dry hair, between washes."</td><td>little tip / Works on dry hair too, great between washes</td><td>I also use it on dry hair between washes</td></tr>
+    <tr><td class="tm">0:27.0–0:27.5</td><td>0.5s</td><td>(pause, swipe)</td><td>—</td><td>—</td></tr>
+    <tr><td class="tm">0:27.5–0:31.0</td><td>1.5s + 2.0s</td><td>"And it's not greasy at all. Fresh roots, happy scalp."</td><td>—</td><td>Not greasy at all. Fresh roots, happy scalp</td></tr>
+    <tr><td class="tm">0:31.0–0:33.0</td><td>2.0s</td><td>"Save this and follow for the next episode."</td><td>—</td><td>Save this and follow for the next episode</td></tr>
+    <tr><td class="tm">0:33.0–0:34.0</td><td>1.0s</td><td>"Annyeong!"</td><td>—</td><td>Annyeong</td></tr>
   </table>
 
   <h2>5 · Pacing map</h2>
   <div class="bar">
-    <div style="flex:2;background:#2B2326">hook</div><div style="flex:1.5;background:#8a7a70">scalp</div><div style="flex:1.5;background:#b7a596">push</div><div style="flex:2.5;background:#2aa6b8">product</div><div style="flex:2;background:#58E0F0;color:#2B2326">ON</div><div style="flex:2;background:#58E0F0;color:#2B2326">drip</div><div style="flex:2.5;background:#c9b44a">inside</div>
-    <div style="flex:2;background:#FCB4CC">01</div><div style="flex:3.5;background:#f5a3bf">02</div><div style="flex:2.5;background:#FCB4CC">03</div><div style="flex:.5;background:#2B2326"></div><div style="flex:3.5;background:#E8789F">after</div><div style="flex:2.5;background:#d79bb0">bye</div><div style="flex:1;background:#EAC6CC">end</div>
+    <div style="flex:.5;background:#F7B3C9"></div><div style="flex:2;background:#2B2326">hook</div><div style="flex:1.5;background:#8a7a70">scalp</div><div style="flex:1.5;background:#b7a596">push</div><div style="flex:2.5;background:#d79bb0">welcome</div><div style="flex:2.5;background:#2aa6b8">product</div><div style="flex:2;background:#58E0F0;color:#2B2326">ON</div><div style="flex:2;background:#58E0F0;color:#2B2326">drip</div><div style="flex:2.5;background:#c9b44a">inside</div>
+    <div style="flex:2;background:#F7B3C9">1</div><div style="flex:3.5;background:#f5a3bf">2</div><div style="flex:2.5;background:#F7B3C9">3</div><div style="flex:2;background:#E8789F">tip</div><div style="flex:.5;background:#2B2326"></div><div style="flex:3.5;background:#d07a9a">result</div><div style="flex:2;background:#d79bb0">save</div><div style="flex:1;background:#b0456c">bye</div>
   </div>
-  <p class="sub" style="font-size:14px">29.5s · 16 clips, average 1.8s each (refs: 1.0–2.7s)</p>
+  <p class="sub" style="font-size:14px">34s · 19 clips, average 1.8s · same length as your ep. 37 (37s)</p>
 </body>
 </html>
