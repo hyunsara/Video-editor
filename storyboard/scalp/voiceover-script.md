@@ -1,13 +1,13 @@
-# Voiceover script: Sara's glow up series, scalp edition (v1)
+# Voiceover script: Sara's glow up series, scalp edition (v2)
 
-Product: VT Cosmetics PDRN Reedle Shot Brush Hair Serum · target ~32s (29.5s without the optional day-14 clip).
+Product: VT Cosmetics PDRN Reedle Shot Brush Hair Serum · target ~29.5s.
 Pace about 2.6 words/sec, relaxed. Record in a quiet room, separately from filming.
 
 | Time | Clip length | Voiceover | On-screen text |
 |------|-------------|-----------|----------------|
-| 0:00.0–0:02.0 | 2.0s | "Annyeong! My face gets ten steps of skincare…" | my face gets 10 steps of skincare… |
-| 0:02.0–0:03.5 | 1.5s | "…and my scalp gets zero." | …my scalp gets zero 🫠 |
-| 0:03.5–0:05.0 | 1.5s | "Until this." | until this 🩵 |
+| 0:00.0–0:02.0 | 2.0s | "Annyeong! I'm honestly so picky about my scalp care…" | i'm honestly so picky about my scalp care 🫧 |
+| 0:02.0–0:03.5 | 1.5s | "…so when I find one I love…" | so when i find one i love… |
+| 0:03.5–0:05.0 | 1.5s | "…I have to share it." | i have to share it 🩵 |
 | 0:05.0–0:07.5 | 2.5s | "VT's PDRN Reedle Shot brush hair serum." | tag: VT PDRN Reedle Shot Brush Hair Serum · pill: glow up · scalp edition |
 | 0:07.5–0:09.5 | 2.0s | "Twist it on…" | twist to ON |
 | 0:09.5–0:11.5 | 2.0s | "…and the serum comes out right through the brush." | serum + scalp brush in one |
@@ -17,9 +17,8 @@ Pace about 2.6 words/sec, relaxed. Record in a quiet room, separately from filmi
 | 0:19.5–0:22.0 | 2.5s | "It feels cool and a little tingly. So relaxing." | 03 · massage / cool + a little tingly 🫧 |
 | 0:22.0–0:22.5 | 0.5s | (pause, hand swipe) | — |
 | 0:22.5–0:26.0 | 1.5s + 2.0s | "And it's not greasy at all. Fresh roots, happy scalp." | fresh roots, not greasy ✨ |
-| 0:26.0–0:28.5 | 2.5s | *(optional)* "Here's day one versus day fourteen." | day 1 → day 14 |
-| 0:28.5–0:31.0 | 2.5s | "Save this for wash day. Annyeong!" | save this for wash day 💗 / annyeong! 안녕 |
-| 0:31.0–0:32.0 | 1.0s | (music only) | end card |
+| 0:26.0–0:28.5 | 2.5s | "Save this for wash day. Annyeong!" | save this for wash day 💗 / annyeong! 안녕 |
+| 0:28.5–0:29.5 | 1.0s | (music only) | end card |
 
 ## Product facts used (retail listings)
 - PHYTO PDRN, caffeine, CICA reedles, silk amino acids, propolis extract.
